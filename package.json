@@ -6,11 +6,13 @@
   "author": "Jordan Hitch",
   "license": "ISC",
   "scripts": {
-    "build": "webpack --mode production"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dfoverdx/htmldiff-js.git"
+    "url": "git+https://github.com/mynt-ai/htmldiff-js.git"
   },
   "keywords": [
     "HtmlDiff",
@@ -20,18 +22,13 @@
     "Diff Structured File"
   ],
   "bugs": {
-    "url": "https://github.com/dfoverdx/htmldiff-js/issues"
+    "url": "https://github.com/mynt-ai/htmldiff-js/issues"
   },
-  "homepage": "https://github.com/dfoverdx/htmldiff-js#readme",
+  "homepage": "https://github.com/mynt-ai/htmldiff-js#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "clean-webpack-plugin": "^0.1.17",
-    "unminified-webpack-plugin": "^2.0.0",
-    "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9"
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "vitest": "^3.0.5"
   }
 }

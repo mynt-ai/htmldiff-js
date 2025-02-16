@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HtmlDiff Demo</title>
+</head>
+
+<body>
+    <h1>HtmlDiff Demo</h1>
+    <div id="output"></div>
+    <script type="module">
+        // Adjust the path if necessary. Here we're assuming you built the library
+        // and the ES module build is available at /dist/htmldiff.es.js.
+        import HtmlDiff from '/dist/htmldiff.es.js';
+
+        // Example usage:
+        const oldHtml = '<p>Some <em>old</em> html here</p>';
+        const newHtml = '<p>Some <b>new</b> html goes here</p>';
+
+        // Execute the diff algorithm:
+        const diffResult = HtmlDiff.execute(oldHtml, newHtml);
+
+        // Display the result:
+        document.getElementById('output').innerHTML = diffResult;
+    </script>
+</body>
+
+</html>
